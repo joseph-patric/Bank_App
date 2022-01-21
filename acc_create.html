@@ -15,6 +15,8 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
+        <script src="./bankscript.js"></script>
+
     <script src="https://kit.fontawesome.com/6d4cfa22ab.js" crossorigin="anonymous"></script>
 
     <style>
@@ -75,16 +77,16 @@
         <h1 style="text-align: center; padding-top: 30px;">Create an account</h1>
         <form>
             <div class="mb-3">
-                <label for="exampleInputName" class="form-label">Name</label>
-                <input type="text" class="form-control" id="exampleInputName">
+                <label for="uname" class="form-label">Name</label>
+                <input type="text" class="form-control" id="uname">
             </div>
             <div class="mb-3">
-                <label for="exampleAccountNumber" class="form-label">Account Number</label>
-                <input type="text" class="form-control" id="exampleAccountNumber">
+                <label for="acno" class="form-label">Account Number</label>
+                <input type="text" class="form-control" id="acno">
             </div>
             <div class="mb-3">
-                <label for="exampleAccountType" class="form-label">Account Type</label>
-                <input type="text" class="form-control" id="exampleAccountType">
+                <label for="actype" class="form-label">Account Type</label>
+                <input type="text" class="form-control" id="actype">
             </div>
             <!-- <div class="input-group mb-3" >
                 
@@ -98,20 +100,20 @@
                 <input type="text" class="form-control" id="result" aria-label="Text input with dropdown button" style="pointer-events: none;">
             </div> -->
             <div class="mb-3">
-                <label for="exampleBalance" class="form-label">Balance</label>
-                <input type="text" class="form-control" id="exampleBalance">
+                <label for="balance" class="form-label">Balance</label>
+                <input type="text" class="form-control" id="balance">
             </div>
             
             <div class="mb-3">
-                <label for="inputPassword5" class="form-label">Password</label>
-                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                <label for="pass" class="form-label">Password</label>
+                <input type="password" id="pass" class="form-control" aria-describedby="passwordHelpBlock">
                 <div id="passwordHelpBlock" class="form-text">
                     Your password must be 8-20 characters long, contain letters and numbers, and must not contain
                     spaces, special characters.
                 </div>
             </div>
            
-            <button type="submit" class="btn" style="background-color: #51B265; color: white;">Submit</button>
+            <button type="button" class="btn" onclick="bank.createAccount()" style="background-color: #51B265; color: white;">Submit</button>
         </form>
     </div>
     </div>
